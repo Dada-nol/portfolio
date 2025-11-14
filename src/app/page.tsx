@@ -25,6 +25,7 @@ interface Project {
   github: string;
   githubBack?: string;
   gradient: string;
+  url: string;
 }
 
 interface Skill {
@@ -91,6 +92,7 @@ export default function Portfolio(): JSX.Element {
       github: "https://github.com/Dada-nol/raama_front",
       githubBack: "https://github.com/Dada-nol/raama_back",
       gradient: "from-purple-500 to-pink-500",
+      url: "https://raama.vercel.app/",
     },
     {
       name: "TrouveTonArtisan",
@@ -99,15 +101,16 @@ export default function Portfolio(): JSX.Element {
       tech: ["React", "CSS3", "JavaScript"],
       github: "https://github.com/Dada-nol/TrouveTonArtisan",
       gradient: "from-blue-500 to-cyan-500",
+      url: "https://trouvetonartisan-ten.vercel.app/",
     },
   ];
 
   const skills: Skill[] = [
-    { name: "React", icon: <Code2 size={24} />, level: 90 },
-    { name: "Node.js", icon: <Layers size={24} />, level: 85 },
-    { name: "Laravel", icon: <Code2 size={24} />, level: 80 },
+    { name: "React", icon: <Code2 size={24} />, level: 80 },
+    { name: "Laravel", icon: <Code2 size={24} />, level: 70 },
+    { name: "Node.js", icon: <Layers size={24} />, level: 55 },
     { name: "MySQL", icon: <Database size={24} />, level: 85 },
-    { name: "JavaScript", icon: <Code2 size={24} />, level: 90 },
+    { name: "JavaScript", icon: <Code2 size={24} />, level: 85 },
     { name: "HTML/CSS", icon: <Layers size={24} />, level: 95 },
   ];
 
@@ -192,7 +195,7 @@ export default function Portfolio(): JSX.Element {
             </div>
           </div>
 
-          <div className="font-sans grid grid-cols-1 md:grid-cols-2 items-center">
+          <div className="font-sans grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-4">
             <div className="flex justify-center">
               <Image
                 src="/img/dada-AI.png"
@@ -269,7 +272,7 @@ export default function Portfolio(): JSX.Element {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute md:bottom-2 bottom-3/4 md:left-1/2 right-6 -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
             <div className="w-1.5 h-3 bg-white/50 rounded-full animate-pulse" />
           </div>
@@ -382,6 +385,15 @@ export default function Portfolio(): JSX.Element {
                       </a>
                     )}
                   </div>
+                  <div className="w-full text-center mt-4 text-pink-500">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Explorer le site &gt;&gt;&gt;
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -421,7 +433,7 @@ export default function Portfolio(): JSX.Element {
       <footer className="relative border-t border-white/10 py-12 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400">
-            © 2024 Nardol Darren. Crafted with React & passion.
+            © 2024 Nardol Darren. Crafted with Nextjs & passion.
           </p>
           <div className="flex gap-6">
             <a
