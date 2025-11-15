@@ -95,13 +95,39 @@ export default function Portfolio(): JSX.Element {
       url: "https://raama.vercel.app/",
     },
     {
+      name: "Jhon Doe Landing Page",
+      description: "Landing page d'un développeur fictif.",
+      tech: ["Vuejs", "Javascript", "CSS3", "Bootstrap"],
+      github: "https://github.com/Dada-nol/Portfolio-project",
+      gradient: "from-blue-500 to-cyan-500",
+      url: "https://jhondoelandingpage.vercel.app/",
+    },
+    {
       name: "TrouveTonArtisan",
       description:
         "Plateforme intelligente de recherche d'artisans avec filtres avancés et interface intuitive.",
       tech: ["React", "CSS3", "JavaScript"],
       github: "https://github.com/Dada-nol/TrouveTonArtisan",
-      gradient: "from-blue-500 to-cyan-500",
+      gradient: "from-purple-500 to-pink-500",
       url: "https://trouvetonartisan-ten.vercel.app/",
+    },
+    {
+      name: "Au petit village",
+      description:
+        "Site web répertoriant tous les personnages les plus amblématique de l'univers d'Astérix et Obélix.",
+      tech: ["Angular", "Typescript", "Sass"],
+      github: "https://github.com/Dada-nol/AuPetitVillage",
+      gradient: "from-blue-500 to-cyan-500",
+      url: "https://au-petit-village-seven.vercel.app/",
+    },
+    {
+      name: "Haunted House 3D",
+      description:
+        "Maison hantée en 3D réalisé avec Threejs et Polyhaven pour les textures. Projet personnel visant à apprendre Threejs.",
+      tech: ["Threejs", "Javascript", "HTML5"],
+      github: "https://github.com/Dada-nol/haunted_house-threejs-",
+      gradient: "from-purple-500 to-pink-500",
+      url: "https://haunted-house-threejs-eta-nine.vercel.app/",
     },
   ];
 
